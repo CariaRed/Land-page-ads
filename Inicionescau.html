@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+    <section class="sec"><!--começo sessao-->
+        <header><!--inicio header-->
+            <a href="index.html"><img src="imagens/logo.png" alt="" class="logo"></a>
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Product</a></li>
+               <li><a href="Liganescau.html">LIGA NESCAU</a></li>
+               <li><a href="#">Joga Junto</a></li>
+               <li><a href="#">Receitas</a></li>
+           </ul>
+     </header><!--fim header-->
+     
+     <div class="content"> <!--inicio content-->
+        <div class="textbox"><!--inicio textbox-->
+            <h2>I like<br><span>The Madness</span>  </h2>
+            <p>Aqui podem ver sobre os novos produtos da nescau no ano de 2021 ;D</p>
+            <a href="">Veja os produtos</a>
+        </div><!--fim textbox-->
+
+        <div class="imgbox"><!--inico imgbox-->
+            <img src="imagens/Nescau2.png" alt="" title="Nescau reutilizavel ;D" class="nescau">
+        </div><!--fim imgbox-->
+     </div><!--fim content-->
+
+     <ul class="thumb"><!--inico thumb-->
+         <li><img src="imagens/NescauDuo1.png" alt="" onclick="imgSlider('imagens/NescauDuo1.png');changeBgcolor('#0000ff')" title="Nescau Duo"></li>
+         <li><img src="imagens/Nescau2.png" alt="" onclick="imgSlider('imagens/Nescau2.png');changeBgcolor('#f70b0b')" title="Nescau"></li>
+         <li><img src="imagens/NescauIntense3.png" alt="" onclick="imgSlider('imagens/NescauIntense3.png');changeBgcolor('#9200be')" title="Nescau Intense" ></li>
+     </ul><!--fim thumb-->
+
+     <ul class="sci"><!--inicio sci-->
+         <li><a href="#"><img src="imagens/facebook.png" alt="" target="_blank"></a></li>
+         <li><a href="#"><img src="imagens/twitter.png" alt=""></a></li>
+         <li><a href="#"><img src="imagens/instagram.png" alt=""></a></li>
+     </ul><!--fim sci-->
+    
+    <script>
+        function imgSlider(anything){
+        document.querySelector('.nescau').src = anything;
+    }
+    function changeBgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+    </script>
+    </section><!--fim sessao-->
+</body>
+</html>
